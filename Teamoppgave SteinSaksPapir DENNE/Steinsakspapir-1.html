@@ -37,14 +37,18 @@
             document.getElementById('app').innerHTML = `
             
             <div class="selections"> 
-                <button id="rock" class="selection" onclick="buttonClick(event)">✊</button>
-                <button id="paper" class="selection" onclick="buttonClick(event)">✋</button>
-                <button id="scissors"  class="selection" onclick="buttonClick(event)">✌️</button>
-                </div>
-
                 <h2>Your choice: <span id="user-choice">${userChoice}</span></h2>
                 <h2>Computer choice: <span id="computer-choice">${computerChoice}</span></h2>
                 <h2>Result: <span id="result">${result}</span></h2>
+                <br>
+                <div class="buttons">
+                    <button id="paper" class="selection" onclick="buttonClick(event)">✋</button>
+                    <button id="scissors"  class="selection" onclick="buttonClick(event)">✌️</button>
+                    <button id="rock" class="selection" onclick="buttonClick(event)">✊</button>
+                    
+                </div>
+                </div>
+
                 `;
         }
 
